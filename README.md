@@ -1,5 +1,5 @@
 # Basic Python3 Projects
-This repository consists of some beginner level projects created using basic pyhton3 syntax.
+This repository consists of some beginner level projects created using basic python3 syntax.
 
 > The Guessing Game
 >> Uses innput from the user to ask for a guess and tells them to guess higher or lower based upon the answer
