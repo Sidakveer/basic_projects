@@ -9,32 +9,26 @@ print("I am thinking of a number between 1 and 100")
 
 difficulty = input("Choose difficulty. Type easy or hard").casefold
 
-
-def check(n):
-    if n == answer:
-        return f"You got it. The answer is {answer}"
-    elif n < answer:
-        return "Too low."
-    else:
-        return "Too high."
-
-
+guess_correct = False
 if difficulty == "easy":
     attempts = 10
 
-    guess = int(input("Please enter a number: "))
     for x in range(attempts):
         print(f"You have {attempts} attempts remaining")
+        guess = int(input("Make a guess: "))
         if guess == answer:
             print(f"You got it. The answer is {answer}")
+            guess_correct = True
             break
         elif guess < answer:
             print("Too low.")
         else:
             print("Too high.")
-    print(f"Sorry you lost. The answer was {answer}")
+            
+    if not guess_correct:
+        print(f"Sorry you lost. The answer was {answer}")
 
 
 
-else: 
+else:
     attempts = 5
